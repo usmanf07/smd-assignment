@@ -29,7 +29,7 @@ public class ScreenOneActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            // Retrieve values from extras
+
             String firstName = extras.getString("firstName");
             String lastName = extras.getString("lastName");
             String email = extras.getString("email");
@@ -58,7 +58,6 @@ public class ScreenOneActivity extends AppCompatActivity {
         gridView.setAdapter(adapter);
 
 
-        // Initialize views
         ImageView backButton = findViewById(R.id.back_arrow);
         tabOne = findViewById(R.id.tabOne);
         tabTwo = findViewById(R.id.tabTwo);
@@ -71,7 +70,6 @@ public class ScreenOneActivity extends AppCompatActivity {
             }
         });
 
-        // Set click listeners for tabs
         tabOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +86,7 @@ public class ScreenOneActivity extends AppCompatActivity {
     }
 
     public void selectTab(View view) {
-        TextView title = findViewById(R.id.title); // Find the title TextView
+
         TextView tabOneView = findViewById(R.id.taboneview);
         RelativeLayout tabTwoView = findViewById(R.id.tabtwoview);
 
