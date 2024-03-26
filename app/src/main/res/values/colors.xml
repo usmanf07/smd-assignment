@@ -5,4 +5,5 @@
     <color name="primary">#2196F3</color>
     <color name="button_background_default">#2196F3</color>
     <color name="button_background_pressed">#1C5A8C</color>
+    <color name="button_exit">#DF4444</color>
 </resources>
